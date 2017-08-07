@@ -18,10 +18,10 @@
         <p>Enter organisation: <input type="text" th:field="*{organisation}" />
             <span th:if="${#fields.hasErrors('organisation')}" th:errors="*{organisation}"/> </p>
 
-        <p>Enter start date (employment with the organisation) in format "YYYY-MM-DD": <input type="text" th:field="*{startDate}" />
+        <p>Enter start date (employment with the organisation) in format "yyyy/MM/dd": <input type="text" th:field="*{startDate}" />
             <span th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"  /> </p>
 
-        <p>Enter end date (employment with the organisation) in format "YYYY-MM-DD":<input type="text" th:field="*{endDate}" />
+        <p>Enter end date (employment with the organisation) in format "yyyy/MM/dd":<input type="text" th:field="*{endDate}" />
             <span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"/> </p>
 
         <p> <input  type = "submit" value="Submit User Info"/> </p>
