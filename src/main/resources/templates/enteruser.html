@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Robo Resume - Enter User</title>
+</head>
+<body>
+<h1>Enter New User's Data</h1>
+
+    <form action="#" th:action="@{/enteruser}" th:object="${newUser}" method="post">
+
+        <p>Enter name: <input type="text" th:field="*{name}" />
+            <span th:if="${#fields.hasErrors('name')}" th:errors="*{name}"/>  </p>
+
+        <p>Enter email address: <input type="text" th:field="*{emailAddress}" />
+            <span th:if="${#fields.hasErrors('emailAddress')}" th:errors="*{emailAddress}"/> </p>
+
+        <p>Enter organisation: <input type="text" th:field="*{organisation}" />
+            <span th:if="${#fields.hasErrors('organisation')}" th:errors="*{organisation}"/> </p>
+
+        <p>Enter start date (employment with the organisation) in format "YYYY-MM-DD": <input type="text" th:field="*{startDate}" />
+            <span th:if="${#fields.hasErrors('startDate')}" th:errors="*{startDate}"  /> </p>
+
+        <p>Enter end date (employment with the organisation) in format "YYYY-MM-DD":<input type="text" th:field="*{endDate}" />
+            <span th:if="${#fields.hasErrors('endDate')}" th:errors="*{endDate}"/> </p>
+
+        <p> <input  type = "submit" value="Submit User Info"/> </p>
+
+    </form>
+<br/>
+<br/>
+<br/>
+<a href="/"> Return to home</a>
+</body>
+</html>
+
+

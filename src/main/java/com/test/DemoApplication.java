@@ -1,0 +1,18 @@
+package com.test;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+
+
+@SpringBootApplication
+public class DemoApplication {
+
+	/**Robo Resume Assignment. Week Two Challenge
+	 * author Anna Volkova
+	 */
+
+	public static void main(String[] args) {
+		SpringApplication.run(DemoApplication.class, args);
+	}
+}

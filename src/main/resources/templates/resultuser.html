@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:th="http://www.thymeleaf.org">
+<head lang="en" >
+    <meta  charset="UTF-8" />
+    <title>Robo Resume - Result User</title>
+</head>
+<body>
+<h1> User Information Entered </h1>
+
+<p th:text="'Name: ' + ${newUser.name}"></p>
+<p th:text="'Email Address: ' + ${newUser.emailAddress}"></p>
+<p th:text="'Organisation: ' + ${newUser.organisation}"></p>
+<p th:text="'Start Date: ' + ${newUser.startDate}"></p>
+<p th:text="'End Date: ' + ${newUser.endDate}"></p>
+
+<p th:text="'Employed Total Days: ' + ${newUser.employedDays}"></p>
+
+
+<a href="/enteruser" > <input type="submit" value="Add Another User"/></a>
+<br/>
+<br/>
+<a href="/displayallusers"> <input type="submit" value="Show All Users"/></a>
+
+</body>
+</html>
+
+
+

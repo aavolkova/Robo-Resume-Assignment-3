@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Robo Resume - Home Page</title>
+</head>
+<body>
+<h1 th:text="${message}">  Welcome...default page...no other message available</h1>
+
+<p><b><span style="color:DodgerBlue  ;"> In this Application user can enter: </span></b></p>
+<ul>
+    <li><i><span style="color:DarkViolet ;"> a name,</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> an email address,</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> an organisation,</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> start date (employment with the organisation),</span></i></li>
+    <li><i><span style="color:DarkViolet ;"> end date (employment with the organisation).</span></i></li>
+</ul>
+<p>
+    <span style="color:LightSeaGreen;">Program also calculates the period (in days) for which the user has been employed</span>
+</p>
+<br/>
+<a href="/enteruser"> <input type="submit" value="Enter New User Data"/></a>
+<p></p>
+<a href="/displayallusers"> <input type="submit" value="Show All Users"/></a>
+
+</body>
+</html>
